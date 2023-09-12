@@ -1,102 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fitness Website</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="fit/Gallery.css">
-  <link rel="stylesheet" href="fit/Shop.css">
-  <link rel="stylesheet" href="fit/Testimonials.css">
-  <link rel="stylesheet" href="fit/Trainer.css"></head>
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#classes">Classes</a></li>
-      <li><a href="#schedule">Schedule</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="hero">
+            <h1>Welcome to Fitness Hub</h1>
+            <p>Your journey to a healthier you starts here.</p>
+            <a href="#classes" class="cta-button">Explore Classes</a>
+        </div>
+    </section>
 
-<section id="home">
-  <div class="hero">
-    <h1>Welcome to Fitness Hub</h1>
-    <p>Your journey to a healthier you start here.</p>
-    <a href="#classes" class="cta-button">Explore Classes</a>
-  </div>
-</section>
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt, nunc eget bibendum volutpat, libero justo viverra ex.</p>
+        </div>
+    </section>
 
-<section id="about">
-  <div class="about-content">
-    <h2>About Us</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt, nunc eget bibendum volutpat, libero justo viverra ex.</p>
-  </div>
-</section>
+    <!-- Classes Section -->
+    <section id="classes">
+        <div class="class-list">
+            <h2>Our Classes</h2>
+            <div class="class-card">
+                <h3>Yoga</h3>
+                <p>A practice that combines physical postures, breathing exercises, and meditation.</p>
+            </div>
+            <div class="class-card">
+                <h3>HIIT</h3>
+                <p>High-Intensity Interval Training designed to burn calories and improve fitness.</p>
+            </div>
+            <!-- Add more class cards as needed -->
+        </div>
+    </section>
 
-<section id="classes">
-  <div class="class-list">
-    <h2>Our Classes</h2>
-    <div class="class-card">
-      <h3>Yoga</h3>
-      <p>A practice that combines physical postures, breathing exercises, and meditation.</p>
-    </div>
-    <div class="class-card">
-      <h3>HIIT</h3>
-      <p>High-Intensity Interval Training designed to burn calories and improve fitness.</p>
-    </div>
+    <!-- Body Diagram Section -->
+    <section id="body-diagram">
+        <div class="body-diagram">
+            <!-- SVG content goes here -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800">
+                <!-- Head -->
+                <circle cx="300" cy="100" r="50" />
 
-  </div>
-</section>
+                <!-- Arms -->
+                <path d="M150 200 Q100 220 80 300" />
+                <path d="M450 200 Q500 220 520 300" />
 
-<section id="schedule">
-  <div class="schedule-table">
-    <h2>Class Schedule</h2>
-    <table>
-      <tr>
-        <th>Class</th>
-        <th>Day</th>
-        <th>Time</th>
-      </tr>
-      <tr>
-        <td>Yoga</td>
-        <td>Monday</td>
-        <td>6:00 PM - 7:00 PM</td>
-      </tr>
-      <tr>
-        <td>HIIT</td>
-        <td>Wednesday</td>
-        <td>5:30 PM - 6:30 PM</td>
-      </tr>
-    </table>
-  </div>
-</section>
+                <!-- Chest -->
+                <ellipse cx="300" cy="400" rx="100" ry="60" />
 
-<section id="contact">
-  <div class="contact-form">
-    <h2>Contact Us</h2>
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-      <button type="submit">Submit</button>
-    </form>
-  </div>
-</section>
+                <!-- Legs -->
+                <path d="M300 460 L250 600" />
+                <path d="M300 460 L350 600" />
+            </svg>
+        </div>
+    </section>
 
-<footer>
-  <p>&copy; 2023 Fitness Hub. All rights reserved.</p>
-</footer>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 Fitness Hub. All rights reserved.</p>
+    </footer>
 
+    <!-- Add your CSS styling in a separate "styles.css" file -->
 </body>
 </html>
