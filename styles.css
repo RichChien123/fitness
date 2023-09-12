@@ -40,6 +40,36 @@ p {
     padding: 50px 0;
 }
 
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, table, svg {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and text color for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Style for the body diagram container */
+.body-diagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style for the SVG content */
+svg {
+    width: 80%; /* Adjust the size as needed */
+    height: auto;
+    max-width: 800px; /* Max width to maintain proportions */
+    fill: #3498db; /* Color for muscles (you can customize) */
+}
+
+
 /* Responsive styles */
 @media (max-width: 768px) {
     .button {
