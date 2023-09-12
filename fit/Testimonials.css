@@ -1,0 +1,44 @@
+/* Testimonials Section */
+.testimonials {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.testimonial {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial p {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Blog Section CSS */
+.blog-post {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.blog-post h2 {
+    font-size: 1.5rem;
+}
+
+.blog-post p {
+    font-size: 1rem;
+}
