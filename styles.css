@@ -2,6 +2,7 @@
 body, h1, h2, h3, p, ul, li, table, svg {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* Set a background color and text color for the entire page */
@@ -9,6 +10,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
     color: #333;
+    line-height: 1.6;
 }
 
 /* Header styles */
@@ -16,6 +18,7 @@ header {
     background-color: #333;
     color: #fff;
     padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header nav ul {
@@ -28,25 +31,37 @@ header nav ul li {
     margin-right: 20px;
 }
 
+header nav ul li:last-child {
+    margin-right: 0;
+}
+
 header nav ul li a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff6600;
 }
 
 /* Hero section styles */
 .hero {
     text-align: center;
     padding: 100px 0;
+    background-image: url('hero-background.jpg'); /* Replace with your image */
+    background-size: cover;
+    color: #fff;
 }
 
 .hero h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 30px;
 }
 
@@ -79,6 +94,9 @@ header nav ul li a {
 /* Classes section styles */
 .class-list {
     padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .class-card {
@@ -86,12 +104,194 @@ header nav ul li a {
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 20px;
-    margin-bottom: 20px;
+    margin: 20px;
+    max-width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.class-card:hover {
+    transform: translateY(-5px);
 }
 
 .class-card h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.testimonial-card {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    max-width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    display: block;
+}
+
+.testimonial-card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.testimonial-card .client-name {
+    font-weight: bold;
+}
+
+/* Newsletter Signup Section */
+.newsletter {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.newsletter h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.newsletter-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.newsletter-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.newsletter-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.newsletter-form button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #e55200;
+}
+
+/* FAQ Section */
+.faq {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.faq h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.faq-item:hover {
+    transform: translateY(-5px);
+}
+
+.faq-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact-form {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button: hover {
+    background-color: #e55200;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9rem;
 }
 
 /* Add your other CSS styles here for the new sections */
