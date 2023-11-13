@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Join Fitness Hub for a journey towards a healthier lifestyle. Explore various fitness classes, schedules, and expert tips.">
     <title>Fitness Website</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Add any external fonts or CSS libraries here -->
 </head>
 <body>
-    <!-- Header Section -->
     <header>
         <nav>
             <ul>
@@ -20,115 +21,89 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home">
-        <div class="hero">
-            <h1>Welcome to Fitness Hub</h1>
-            <p>Your journey to a healthier you starts here.</p>
-            <a href="#classes" class="cta-button">Explore Classes</a>
-        </div>
-    </section>
+    <main>
+        <!-- Enhanced Home Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1>Welcome to Fitness Hub</h1>
+                <p>Your journey to a healthier you starts here.</p>
+                <a href="#classes" class="cta-button">Explore Classes</a>
+            </div>
+            <!-- Optional: Add a background image or video here -->
+        </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <div class="about-content">
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt, nunc eget bibendum volutpat, libero justo viverra ex.</p>
-        </div>
-    </section>
+        <!-- Enhanced About Section -->
+        <section id="about" class="about-section">
+            <div class="about-content">
+                <h2>About Us</h2>
+                <p>Learn about our mission, values, and the journey of Fitness Hub...</p>
+                <!-- Optional: Add images or videos to make it more engaging -->
+            </div>
+        </section>
 
-    <!-- Classes Section -->
-    <section id="classes">
-        <div class="class-list">
+        <!-- Enhanced Classes Section -->
+        <section id="classes" class="classes-section">
             <h2>Our Classes</h2>
-            <div class="class-card">
-                <h3>Yoga</h3>
-                <p>A practice that combines physical postures, breathing exercises, and meditation.</p>
+            <div class="class-list">
+                <article class="class-card">
+                    <h3>Yoga</h3>
+                    <p>A practice that combines physical postures...</p>
+                </article>
+                <!-- More class cards here -->
+                <!-- Optional: Add a carousel or grid layout for class cards -->
             </div>
-            <div class="class-card">
-                <h3>HIIT</h3>
-                <p>High-Intensity Interval Training designed to burn calories and improve fitness.</p>
-            </div>
-            <!-- Add more class cards as needed -->
-        </div>
-    </section>
+        </section>
 
-    <!-- Body Diagram Section -->
-    <section id="body-diagram">
-        <div class="body-diagram">
-            <!-- SVG content goes here -->
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800">
-                <!-- Body diagram SVG code -->
-            </svg>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials">
-        <div class="testimonials">
+        <!-- Enhanced Testimonials Section -->
+        <section id="testimonials" class="testimonials-section">
             <h2>What Our Clients Say</h2>
-            <div class="testimonial-card">
-                <img src="client1.jpg" alt="Client 1">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam id erat eu eleifend.</p>
-                <p class="client-name">- John Doe</p>
+            <div class="testimonial-wrapper">
+                <!-- Using a carousel/slider for testimonials can be more interactive -->
+                <article class="testimonial-card">
+                    <img src="client1.jpg" alt="Client 1 smiling after a workout">
+                    <p>Lorem ipsum dolor sit amet...</p>
+                    <p class="client-name">- John Doe</p>
+                </article>
+                <!-- More testimonials here -->
             </div>
-            <div class="testimonial-card">
-                <img src="client2.jpg" alt="Client 2">
-                <p>Ut fermentum dolor in libero rhoncus, sit amet placerat justo eleifend.</p>
-                <p class="client-name">- Jane Smith</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Newsletter Signup Section -->
-    <section id="newsletter">
-        <div class="newsletter">
-            <h2>Subscribe to Our Newsletter</h2>
-            <form class="newsletter-form">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <button type="submit">Subscribe</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section id="faq">
-        <div class="faq">
+        <!-- Enhanced FAQ Section -->
+        <section id="faq" class="faq-section">
             <h2>Frequently Asked Questions</h2>
-            <div class="faq-item">
-                <h3>How do I sign up for a class?</h3>
-                <p>You can sign up for classes by visiting our schedule page and selecting the class you want to attend. Then, click the "Sign Up" button.</p>
+            <div class="faq-wrapper">
+                <!-- Consider using a collapsible/accordion layout for FAQs -->
+                <div class="faq-item">
+                    <h3>How do I sign up for a class?</h3>
+                    <p>You can sign up for classes...</p>
+                </div>
+                <!-- More FAQ items here -->
             </div>
-            <div class="faq-item">
-                <h3>What should I bring to a workout session?</h3>
-                <p>We recommend bringing comfortable workout attire, a water bottle, and a positive attitude!</p>
-            </div>
-            <!-- Add more FAQ items as needed -->
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="contact-form">
+        <!-- Enhanced Contact Section -->
+        <section id="contact" class="contact-section">
             <h2>Contact Us</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-    </section>
+            <div class="contact-form">
+                <!-- Improve the form's visual layout and add more interactivity -->
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
-    <!-- Footer Section -->
     <footer>
         <p>&copy; 2023 Fitness Hub. All rights reserved.</p>
+        <!-- Social media links can be added here -->
     </footer>
 
-    <!-- Add your CSS styling in a separate "styles.css" file -->
+    <!-- Add your JavaScript files here -->
 </body>
 </html>
